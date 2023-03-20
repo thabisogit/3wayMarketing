@@ -85,6 +85,7 @@ class EmailController extends Controller
 
         public function verify_otp(Request $request)
         {
+            // dd($request->otp);
             // dd($request->email);
             $user_id = $request->email; 
             $otp = $request->otp;
